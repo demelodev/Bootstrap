@@ -123,6 +123,7 @@ section.diferenciais > h2{
 .equipe-single{
 	margin-bottom: 15px;
 	width: 100%;
+	min-height: 210px;
 	padding:20px 10px;
 	border: 1px solid #ccc;
 	box-shadow: 8px 7px 5px -3px rgba(20,20,20,0.6);
@@ -155,7 +156,7 @@ section.equipe h2{
 }
 
 .user-picture-child > span{
-	color: rgb(110, 110, 110);
+	color: rgb(110,110,110);
 	font-size: 20px;
 	position: relative;
 	left: 50%;
@@ -194,6 +195,10 @@ footer p{
 	position: relative;
 }
 
+.user-picture-child > span{
+	font-size: 30px;
+}
+
 	section.cadastro-lead form{
 	position: relative;
 	top: 0px;
@@ -201,6 +206,9 @@ footer p{
 } 
 
 @media screen and (max-width: 500px){
+.user-picture-child > span{
+	font-size: 24px;
+}
 .chamada-banner h2{
 	color: #26A599;
 	font-size: 35px;
