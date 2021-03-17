@@ -154,6 +154,15 @@ section.equipe h2{
 	background-color:#ccc;
 }
 
+.user-picture-child > span{
+	color: rgb(110, 110, 110);
+	font-size: 20px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
 section.final-site{
 	padding:30px 0;
 	color: #4b4b4b;

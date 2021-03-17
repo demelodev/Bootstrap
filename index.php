@@ -107,7 +107,7 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="user-picture">
-                                  <div class="user-picture-child"></div>
+                                  <div class="user-picture-child"><span class="glyphicon glyphicon-user"></span></div>
                                 </div>
                             </div>
                             <div class="col-md-10">
@@ -123,7 +123,7 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="user-picture">
-                                  <div class="user-picture-child"></div>
+                                <div class="user-picture-child"><span class="glyphicon glyphicon-user"></span></div>
                                 </div>
                             </div>
                             <div class="col-md-10">
@@ -138,7 +138,7 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="user-picture">
-                                  <div class="user-picture-child"></div>
+                                <div class="user-picture-child"><span class="glyphicon glyphicon-user"></span></div>
                                 </div>
                             </div>
                             <div class="col-md-10">
@@ -154,7 +154,7 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="user-picture">
-                                  <div class="user-picture-child"></div>
+                                  <div class="user-picture-child"><span class="glyphicon glyphicon-user"></span></div>
                                 </div>
                             </div>
                             <div class="col-md-10">
