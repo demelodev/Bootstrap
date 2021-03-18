@@ -1,3 +1,10 @@
+<?php
+  $pdo = new PDO('mysql:host=localhost;dbname=bootstrap_projeto','root','');
+  $sobre = $pdo->prepare("SELECT * FROM tb_sobre ");
+  $sobre->execute();
+  $sobre = $sobre->fetch()['sobre'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -75,26 +82,7 @@
     <section class="diferenciais text-center">
       <h2>Conheça nossa empresa</h2>
         <div class="container diferenciais-container">
-            <div class="row">
-              <div class="col-md-4">
-                  <h3><span class="glyphicon glyphicon-glass"></span></h3>
-                  <h2>Diferencial #1</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget lorem varius, pellentesque ipsum convallis, suscipit neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam quis orci quam. Phasellus dictum erat at nibh bibendum, eget porta urna pretium. Maecenas vel augue massa. Nulla facilisi. Nulla a suscipit quam, eu pharetra justo.</p>
-              </div>
-
-              <div class="col-md-4">
-                  <h3><span class="glyphicon glyphicon-star"></span></h3>
-                  <h2>Diferencial #1</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget lorem varius, pellentesque ipsum convallis, suscipit neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam quis orci quam. Phasellus dictum erat at nibh bibendum, eget porta urna pretium. Maecenas vel augue massa. Nulla facilisi. Nulla a suscipit quam, eu pharetra justo.</p>
-              </div>
-
-              <div class="col-md-4">
-                  <h3><span class="glyphicon glyphicon-heart"></span></h3>
-                  <h2>Diferencial #1</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget lorem varius, pellentesque ipsum convallis, suscipit neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam quis orci quam. Phasellus dictum erat at nibh bibendum, eget porta urna pretium. Maecenas vel augue massa. Nulla facilisi. Nulla a suscipit quam, eu pharetra justo.</p>
-              </div>
-
-            </div>
+            <div class="row">  <?php  echo $sobre; ?> </div>
         </div>
       </section>
 
